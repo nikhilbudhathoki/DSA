@@ -1,0 +1,110 @@
+DATA STRUCTURE AND ALGORITHMS IN PYTHON
+------------------------------------------
+THEY ARE LIKE RAW MATERIALS TO MAKE THE SOFTWARE OR SYSTEM
+RAW MATERIALS + CODE INSTRUCTION == SYSTEM
+
+DATA STRUCTURE ARE : ARRAY , TREE
+
+
+ARRAY: LIST,     HASHMAP:DICTIONARY
+WE HAVE TO KNOW WHEN TO USE THE DATA STRUCTURE
+
+
+1.AS WE NEED TO STORE ONLY ONE KIND OF DTYPE IN THE CONTIGIOUS MEMORY LOCATION AS SINGLE INDEX , WE CAN USE LIST.
+2.IN HASHMAP:DICT WE CAN STORE  2 KIND OF VALUE AS SINGLE MEMBER OF THE CONTIGIOUS MEMORY LOCATION AS KEY AND VALUE
+
+
+EG:
+LIST =[1,2,3,4,5]#I.E STOCK PRICES ACCORDING TO DAY CORRESPONDING TO INDEX
+DICT={"2023/2/3":22,"2024/2/4":33}
+
+
+
+
+
+
+BIG O NOTATION:
+USED TO MEASURE TIME COMPLEXITY OF THE PROGRAM'
+
+O IS ORDER
+
+
+
+1.When time varies
+
+eg:
+def foo(arr):
+if array is of 10 element it would take 0.22ms
+if array is of 100 element it would take 2 sec
+So it is increasing linearly according to number of size of array(n)
+
+it becomes y=a*n+b
+Rules of finding time COMPLEXITY
+i.e:
+1.Take the most increasing or changing variable term i.e a
+2.Remove constant term i.e b
+
+Now it becomes n ONLY
+so =O(n)
+
+
+eg:
+def get_squared(num):
+    square=[]
+    for i in num:
+        square.append(i*i)
+    return get_squared
+number=[1,2,3,4]
+get_squared(number)#It woud take let suppose 0.3 sec
+
+
+n=[12,3,4,5,6,6,7,7,8,9,0,6,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
+get_squared(n)#It would take 0.6 sec
+
+
+
+2.When time is constant
+    def foo(arr):
+    arr->size->2->0.02sec
+    arr->size->1000->0.023 sec
+
+    time=O(1)# all are constant
+
+def find_pe(price,eps,index):
+    pe=price[index]=eps/[index]
+    return pe
+
+    #It is only working one operation at a time so it is taking same time
+
+
+
+    3.When 2 operation are there for nsq and n :
+
+
+    for i range(len(number)):
+        for j in range(i+1,len(number)):#IT TAKES N SQUARE
+            if(number[i]==number[j]):#ITERATION AS IT IS DOING FOR i and j 
+                duplicate=number[i]
+                break
+
+
+    for j in range(len(numbers)):
+        if(numbers[j]==duplicate):#IT IS DOING FOR N ITERATION ONLY OF i
+            print(j)
+
+
+
+->So the time=a*n^2+b*n+c  
+----------------------------
+---->According to the rules take most changing term that will bw nsquare
+
+    So it becomes O(n^2)
+    
+
+
+
+
+
+
+
+
